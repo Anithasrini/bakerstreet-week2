@@ -7,31 +7,46 @@
 }
 
 .container {
-  max-width: 70%;
+  width: 90%;
+  margin: auto;
 }
+ body {
+   display: block;
+ }
 
-#logo {
-  max-width: 100%;
-  display:block;
-  margin-left: auto;
+ .logo {
+   margin-top: 25px;
+ }
+
+.logo img {
+  /*height: 100%;*/
+  display: block;
   margin-right: auto;
+  margin-left: auto;
 
-}
-.logo {
-text-align: center;
 }
 .intro {
 text-align: center;
+float:right;
 }
 
-li, ol {
+li {
  list-style: none;
 }
 
 .main img {
   max-width: 100%;
-  width: 168px;
-  height: 175px;
+  /*width: 300px;*/
+  /*height: 175px;*/
+  float: left;
+}
+
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+
 }
 
 
@@ -42,39 +57,84 @@ li, ol {
 }
 
 .navbar {
-  display: block;
+  /*display: block;*/
   border-top: 1px solid black;
   font-size: 12px;
+  margin-top: 35px;
+  font-size: 12px;
+
+
+}
+ul{
+  padding: 0;
 }
 
-.first,
-.second,
-.last {
-  margin: 25px;
-  /*padding: 20px;*/
-  margin-top: 5px;
+h2 {
+  font-weight: normal;
+}
+ul li {
+  float: left;
+  width: 30%;
   border-bottom: 1px solid black;
-  float:left;
   text-align: center;
+  margin-right: 5%;
   padding-bottom: 10px;
-  padding: 10px;
-
+  color: black;
+}
+.last{
+  margin-right: 0;
 
 }
 
-.him {
-  float: left;
+.footer {
+  clear: both;
   text-align: center;
-  padding-top: 15px;
-  display: inline;
-  padding: 8px;
-  padding-bottom: 60px;
-  padding-left: 30px;
+  border-top: 1px solid black;
+  margin-top: 20px;
 }
+
+.main h3 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.him img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 10%;
+}
+
+
+div.him {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+
+}
+
+.him:nth-child(even){
+  margin-left: -8px;
+  float: left;
+  margin-right: 70px;
+}
+.him:nth-child(odd){
+  float: left;
+  /*padding-left: 10px;*/
+  margin-left: 10px;
+}
+
 .caption {
-  float: left;
-  text-align: center;
-  padding-top: 15px;
-  margin-top: 180px;
-  margin-left: 15px;
+    display: block;
+    margin-left: 40px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+.intro p {
+  text-align: left;
 }
