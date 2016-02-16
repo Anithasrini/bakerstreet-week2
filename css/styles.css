@@ -7,11 +7,12 @@
 }
 
 .container {
-  width: 90%;
+  width: 600px;
   margin: auto;
 }
  body {
    display: block;
+   background-color: #E9E9E9;
  }
 
  .logo {
@@ -46,6 +47,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  color: #E14141;
 
 }
 
@@ -79,7 +81,7 @@ ul li {
   text-align: center;
   margin-right: 5%;
   padding-bottom: 10px;
-  color: black;
+  color: #E14141;
 }
 .last{
   margin-right: 0;
@@ -103,7 +105,9 @@ ul li {
 .him img {
   max-width: 180px;
   height: auto;
-  border-radius: 10%;
+  border-radius: 5%;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 
@@ -135,6 +139,121 @@ h3 {
   font-size: 25px;
   font-weight: normal;
 }
+
 .intro p {
   text-align: left;
+}
+
+.div {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+ /*MEDIA QUERIES*/
+
+ @media only screen and (min-width: 320px),
+ only screen and (min-width: 320px) and (orientation: portrait) {
+
+.container {
+  max-width: 320px;
+  /*max-width: 320px;*/
+  /*margin: 0 auto;*/
+}
+
+ @media only screen and (min-width: 480px),
+ only screen and (min-width: 480px) and (orientation: landscape) {
+
+.container {
+ max-width:700px;
+ height: auto;
+}
+
+.him:nth-child(4) {
+ margin-left: 80px;
+}
+.him:nth-child(6) {
+ margin-left: 80px;
+}
+.him:nth-child(5) {
+ margin-left: -10px;
+}
+
+.him:nth-child(7) {
+ margin-left: 15px;
+}
+
+
+
+ @media only screen and (min-width: 960px),{
+
+.container {
+  display: block;
+}
+ .logo {
+   position: relative;
+   right: 460px;
+   top: 80px;
+   /*margin-left: -1000px;*/
+   /*margin-top: 100px;*/
+ }
+ .navbar a {
+   font-size: 15px;
+   font-weight: bold;
+   border-top: 1px solid black;
+
+ }
+
+
+  .first {
+  position: relative;
+  top: 300px;
+  right: 250px;
+  border-top: 1px solid black;
+  padding-top: 15px;
+}
+
+.second {
+  position: relative;
+  top: 380px;
+  right: 463px;
+}
+
+.last {
+  position: relative;
+  top: 460px;
+  right: 672px;
+}
+
+.him:nth-child(2) {
+  margin-left: 10px;
+}
+.him:nth-child(5) {
+  margin-left: 10px;
+}
+.intro {
+  font-size: 20px;
+  font-weight:normal;
+  font-family:inherit;
+}
+.main img {
+  width: 400px;
+  height: 300px;
+}
+.navbar {
+  border-top: none;
+  margin-top: -50px;
+}
+}
+@media only screen and (min-width: 1024px),
+only screen and (min-width: 1000px) {
+
+.container {
+  max-width: 1024px;
+}
+
+.him img {
+float: left }
+
+}
 }
